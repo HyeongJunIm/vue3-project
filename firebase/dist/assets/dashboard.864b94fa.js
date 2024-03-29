@@ -1,1 +1,0 @@
-import{_ as e}from"./plugin-vue_export-helper.21dcd24c.js";import{o,d as s,c as t}from"./index.6ca2564f.js";const a={},r=t("div",{class:"text-h4"},"Admin/DashBoard",-1),c=[r];function d(n,_){return o(),s("div",null,c)}var l=e(a,[["render",d]]);export{l as default};

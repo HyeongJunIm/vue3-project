@@ -7,7 +7,7 @@ import {
 } from 'vue-router/auto';
 
 import { setupLayouts } from 'virtual:generated-layouts';
-
+import { LoadingBar } from 'quasar';
 export default route(function (/* { store, ssrContext } */) {
   const createHistory = process.env.SERVER
     ? createMemoryHistory
@@ -18,7 +18,7 @@ export default route(function (/* { store, ssrContext } */) {
   const Router = createRouter({
     scrollBehavior: () => ({ left: 0, top: 0 }),
 
-    // setupLayouts을 할용하여 
+    // setupLayouts을 할용하여
     history: createHistory(process.env.VUE_ROUTER_BASE),
     extendRoutes: routes => {
       return setupLayouts(
@@ -36,6 +36,14 @@ export default route(function (/* { store, ssrContext } */) {
         }),
       );
     },
+  });
+
+  Router.beforeEach(() => {
+    LoadingBar.start();
+  });
+
+  Router.afterEach(() => {
+    LoadingBar.stop();
   });
 
   return Router;

@@ -1,7 +1,7 @@
 <template>
   <q-page padding>
     <ais-instant-search :search-client="searchClient" index-name="dev_posts">
-      <ais-configure :hits-per-page.camel="8"></ais-configure>
+      <ais-configure :hits-per-page.camel="8" />
       <div class="row q-col-gutter-x-lg">
         <section class="col-3">
           <q-card flat bordered class="q-pa-md">
@@ -26,9 +26,7 @@
           <q-seperator spaced />
           <ais-hits :transform-items="transformItems">
             <template v-slot="{ items }">
-              <template v-for="item in items" :key="item.id">
-                <PostItem :item="item" />
-              </template>
+              <PostList :items="items" />
             </template>
           </ais-hits>
 
@@ -45,7 +43,7 @@
 import algoliasearch from 'algoliasearch/lite';
 import 'instantsearch.css/themes/algolia-min.css';
 import PostItem from 'src/components/apps/post/PostItem.vue';
-
+import PostList from 'src/components/apps/post/PostList.vue';
 const searchClient = algoliasearch(
   '8LSKX8M2P1',
   '2c153a3420d172330dd13d51623e9fca',
@@ -69,4 +67,25 @@ const transformItems = items => {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss">
+.ais-RefinementList-label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-transform: lowercase;
+  cursor: pointer;
+}
+.ais-RefinementList-label > * {
+  display: inline-block;
+}
+.ais-RefinementList-label > .ais-RefinementList-checkbox {
+  margin-right: 6px;
+}
+.ais-RefinementList-label > .ais-RefinementList-labelText {
+  flex-grow: 1;
+}
+.ais-RefinementList-label > .ais-RefinementList-count {
+  padding: 0.01rem 0.4rem;
+  border-radius: 50%;
+}
+</style>

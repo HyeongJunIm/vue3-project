@@ -22,6 +22,8 @@
         placeholder="제목"
         hide-bottom-space
         :rules="[validateRequird]"
+        counter
+        maxlength="40"
       />
       <q-select
         v-model="categoryModel"

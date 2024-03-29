@@ -29,6 +29,14 @@ ellipsis-2-lines => 글 ...으로 표시 스타일
           >#{{ tag }}</span
         >
       </div>
+      <div v-if="escapeHTML" class="text-grey-6 q-my-sm ellipsis-2-lines">
+        {{ item.content }}
+      </div>
+      <div
+        v-else
+        class="text-grey-6 q-my-sm ellipsis-2-lines"
+        v-html="item.content"
+      ></div>
       <div
         class="text-grey-6 q-my-sm ellipsis-2-lines"
         v-html="item.content"
@@ -99,6 +107,10 @@ const props = defineProps({
   item: {
     type: Object,
     default: () => ({}),
+  },
+  escapeHTML: {
+    type: Boolean,
+    default: false,
   },
 });
 
