@@ -1,0 +1,133 @@
+[debug] [2024-03-29T04:25:04.843Z] ----------------------------------------------------------------------
+[debug] [2024-03-29T04:25:04.853Z] Command:       C:\web_ihj\Vue정리\node.js\node.exe C:\Users\dw217\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-03-29T04:25:04.853Z] CLI Version:   13.6.0
+[debug] [2024-03-29T04:25:04.853Z] Platform:      win32
+[debug] [2024-03-29T04:25:04.853Z] Node Version:  v20.11.0
+[debug] [2024-03-29T04:25:04.854Z] Time:          Fri Mar 29 2024 13:25:04 GMT+0900 (대한민국 표준시)
+[debug] [2024-03-29T04:25:04.854Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-29T04:25:04.860Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-29T04:25:04.860Z] > authorizing via signed-in user (chaesng6064@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\web_ihj\Vue정리\vue3-firebase-app
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-03-29T04:26:07.467Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-03-29T04:26:08.416Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-03-29T04:26:08.416Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project ihj-vue3-firebase-app-5e087 (Vue3 Firebase App) 
+[info] 
+=== Firestore Setup
+[debug] [2024-03-29T04:26:19.128Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087/services/firestore.googleapis.com [none]
+[debug] [2024-03-29T04:26:19.129Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087/services/firestore.googleapis.com x-goog-quota-user=projects/ihj-vue3-firebase-app-5e087
+[debug] [2024-03-29T04:26:20.639Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087/services/firestore.googleapis.com 200
+[debug] [2024-03-29T04:26:20.639Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087/services/firestore.googleapis.com [omitted]
+[debug] [2024-03-29T04:26:20.640Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087/databases/(default) [none]
+[debug] [2024-03-29T04:26:20.955Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087/databases/(default) 200
+[debug] [2024-03-29T04:26:20.955Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087/databases/(default) {"name":"projects/ihj-vue3-firebase-app-5e087/databases/(default)","uid":"60c63e5d-86ef-4f9d-9110-68a9da199040","createTime":"2024-03-19T01:37:40.221176Z","updateTime":"2024-03-19T01:37:40.221176Z","locationId":"asia-northeast3","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-03-29T03:26:20.883905Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"v","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IIyazNXQmIUDMJSliMaZ/4QD"}
+[debug] [2024-03-29T04:26:20.955Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-03-29T04:26:20.956Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-29T04:26:20.956Z] > authorizing via signed-in user (chaesng6064@gmail.com)
+[debug] [2024-03-29T04:26:20.956Z] [iam] checking project ihj-vue3-firebase-app-5e087 for permissions ["firebase.projects.get"]
+[debug] [2024-03-29T04:26:20.957Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087:testIamPermissions [none]
+[debug] [2024-03-29T04:26:20.957Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087:testIamPermissions x-goog-quota-user=projects/ihj-vue3-firebase-app-5e087
+[debug] [2024-03-29T04:26:20.958Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-03-29T04:26:21.574Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087:testIamPermissions 200
+[debug] [2024-03-29T04:26:21.575Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-03-29T04:26:25.062Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087/releases pageSize=10&pageToken=
+[debug] [2024-03-29T04:26:26.673Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087/releases 200
+[debug] [2024-03-29T04:26:26.673Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087/releases {"releases":[{"name":"projects/ihj-vue3-firebase-app-5e087/releases/cloud.firestore","rulesetName":"projects/ihj-vue3-firebase-app-5e087/rulesets/1de43ca8-87bc-4310-a092-28cfe742dbef","createTime":"2024-03-19T01:37:48.203163Z","updateTime":"2024-03-25T03:34:03.858534Z"},{"name":"projects/ihj-vue3-firebase-app-5e087/releases/firebase.storage/ihj-vue3-firebase-app-5e087.appspot.com","rulesetName":"projects/ihj-vue3-firebase-app-5e087/rulesets/1c26ba69-73ab-4338-b9dd-a13366de52af","createTime":"2024-03-21T06:27:16.900592Z","updateTime":"2024-03-21T06:27:16.900592Z"}]}
+[debug] [2024-03-29T04:26:26.705Z] Found ruleset: projects/ihj-vue3-firebase-app-5e087/rulesets/1de43ca8-87bc-4310-a092-28cfe742dbef
+[debug] [2024-03-29T04:26:26.706Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087/rulesets/1de43ca8-87bc-4310-a092-28cfe742dbef [none]
+[debug] [2024-03-29T04:26:27.838Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087/rulesets/1de43ca8-87bc-4310-a092-28cfe742dbef 200
+[debug] [2024-03-29T04:26:27.838Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087/rulesets/1de43ca8-87bc-4310-a092-28cfe742dbef [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-03-29T04:26:30.978Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2024-03-29T04:26:30.980Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2024-03-29T04:26:31.240Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2024-03-29T04:26:31.240Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/ihj-vue3-firebase-app-5e087/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[debug] [2024-03-29T04:26:31.244Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2024-03-29T04:26:31.244Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087/databases/(default)/collectionGroups/-/indexes {"indexes":[{"name":"projects/ihj-vue3-firebase-app-5e087/databases/(default)/collectionGroups/posts/indexes/CICAgJim14AJ","queryScope":"COLLECTION","fields":[{"fieldPath":"tags","arrayConfig":"CONTAINS"},{"fieldPath":"likeCount","order":"DESCENDING"},{"fieldPath":"__name__","order":"DESCENDING"}],"state":"READY"},{"name":"projects/ihj-vue3-firebase-app-5e087/databases/(default)/collectionGroups/posts/indexes/CICAgOjXh4EJ","queryScope":"COLLECTION","fields":[{"fieldPath":"category","order":"ASCENDING"},{"fieldPath":"readCount","order":"DESCENDING"},{"fieldPath":"__name__","order":"DESCENDING"}],"state":"READY"},{"name":"projects/ihj-vue3-firebase-app-5e087/databases/(default)/collectionGroups/posts/indexes/CICAgJiUpoMJ","queryScope":"COLLECTION","fields":[{"fieldPath":"tags","arrayConfig":"CONTAINS"},{"fieldPath":"createdAt","order":"DESCENDING"},{"fieldPath":"__name__","order":"DESCENDING"}],"state":"READY"},{"name":"projects/ihj-vue3-firebase-app-5e087/databases/(default)/collectionGroups/posts/indexes/CICAgJim14AK","queryScope":"COLLECTION","fields":[{"fieldPath":"tags","arrayConfig":"CONTAINS"},{"fieldPath":"readCount","order":"DESCENDING"},{"fieldPath":"__name__","order":"DESCENDING"}],"state":"READY"},{"name":"projects/ihj-vue3-firebase-app-5e087/databases/(default)/collectionGroups/posts/indexes/CICAgOjXh4EK","queryScope":"COLLECTION","fields":[{"fieldPath":"category","order":"ASCENDING"},{"fieldPath":"createdAt","order":"DESCENDING"},{"fieldPath":"__name__","order":"DESCENDING"}],"state":"READY"},{"name":"projects/ihj-vue3-firebase-app-5e087/databases/(default)/collectionGroups/posts/indexes/CICAgJiUpoMK","queryScope":"COLLECTION","fields":[{"fieldPath":"category","order":"ASCENDING"},{"fieldPath":"likeCount","order":"DESCENDING"},{"fieldPath":"__name__","order":"DESCENDING"}],"state":"READY"}]}
+[info] 
+=== Functions Setup
+[debug] [2024-03-29T04:26:31.247Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-29T04:26:31.248Z] > authorizing via signed-in user (chaesng6064@gmail.com)
+[debug] [2024-03-29T04:26:31.248Z] [iam] checking project ihj-vue3-firebase-app-5e087 for permissions ["firebase.projects.get"]
+[debug] [2024-03-29T04:26:31.248Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087:testIamPermissions [none]
+[debug] [2024-03-29T04:26:31.248Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087:testIamPermissions x-goog-quota-user=projects/ihj-vue3-firebase-app-5e087
+[debug] [2024-03-29T04:26:31.248Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-03-29T04:26:32.142Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087:testIamPermissions 200
+[debug] [2024-03-29T04:26:32.142Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-03-29T04:26:32.142Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-03-29T04:26:32.142Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/ihj-vue3-firebase-app-5e087
+[debug] [2024-03-29T04:26:32.144Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-03-29T04:26:32.144Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/ihj-vue3-firebase-app-5e087
+[debug] [2024-03-29T04:26:33.529Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087/services/cloudfunctions.googleapis.com 200
+[debug] [2024-03-29T04:26:33.529Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2024-03-29T04:26:33.601Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087/services/runtimeconfig.googleapis.com 200
+[debug] [2024-03-29T04:26:33.601Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ihj-vue3-firebase-app-5e087/services/runtimeconfig.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[debug] [2024-03-29T04:28:08.193Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ihj-vue3-firebase-app-5e087 [none]
+[debug] [2024-03-29T04:28:08.930Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ihj-vue3-firebase-app-5e087 200
+[debug] [2024-03-29T04:28:08.931Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ihj-vue3-firebase-app-5e087 {"projectId":"ihj-vue3-firebase-app-5e087","projectNumber":"1060099979864","displayName":"Vue3 Firebase App","name":"projects/ihj-vue3-firebase-app-5e087","resources":{"hostingSite":"ihj-vue3-firebase-app-5e087","storageBucket":"ihj-vue3-firebase-app-5e087.appspot.com","locationId":"asia-northeast3"},"state":"ACTIVE","etag":"1_f8085369-660d-4125-8336-abf15e3a291c"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-03-29T04:28:57.089Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-03-29T04:28:57.453Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-03-29T04:28:57.453Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.10.0","browserURL":"https://www.gstatic.com/firebasejs/10.10.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.10.0/firebase.tgz"},"live":{"version":"10.10","browserURL":"https://www.gstatic.com/firebasejs/live/10.10/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.10/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.10.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.10.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.10.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.10.0/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.10.0/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.10.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.10.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.10.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.10.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.10.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.10.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.10.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.10.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+=== Storage Setup
+[info] 
+[info] Firebase Storage Security Rules allow you to define how and when to allow
+[info] uploads and downloads. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[info] +  Wrote storage.rules 
+[info] 
+=== Emulators Setup

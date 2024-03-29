@@ -20,7 +20,7 @@
                 src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg"
               />
             </q-avatar>
-            짐코딩 클럽
+            코딩 클럽
           </q-toolbar-title>
         </q-btn>
         <q-space />
@@ -37,14 +37,14 @@
           stretch
           flat
           label="온라인 강의"
-          href="https://edu.gymcoding.co"
+          href="https://google.com"
           target="_blanck"
         />
         <q-btn
           stretch
           flat
           label="유투브"
-          href="https://youtube.com/@gymcoding"
+          href="https://youtube.com/"
           target="_blanck"
         />
 
@@ -113,7 +113,6 @@ const route = useRoute();
 const $q = useQuasar();
 //breack Point 설정
 // console.dir(route);
-// debugger;  디버그 설정을 통해서 중간에 값이 넘어가는지 확인을 할수 있다
 // 패아자 스타일도 route의 매타정보(자식 컴포넌트의 값)를 활용하여 페이지별 구분할수 있다.
 const pageContainerStyles = computed(() => ({
   maxWidth: route.meta.width || '1080px',

@@ -67,7 +67,6 @@ const { isLoding, execute } = useAsyncState(updateUserPassword, null, {
     $q.notify('비밀번호가 변경되었습니다!');
     form.value.newPassword = '';
     form.value.newPasswordConfirm = '';
-    // debugger;
   },
   onError: err => {
     $q.notify({
