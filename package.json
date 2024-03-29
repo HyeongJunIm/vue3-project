@@ -1,0 +1,53 @@
+{
+  "name": "vue3-firebase-app",
+  "version": "0.0.1",
+  "description": "Vue3 Quasar Firebase TypeScript Lecture",
+  "productName": "Vue3 Firebase App",
+  "author": "HyeongJunIm <chaesng6064@gmail.com>",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue ./",
+    "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
+    "test": "echo \"No test specified\" && exit 0",
+    "dev": "quasar dev",
+    "build": "quasar build"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.16.4",
+    "@tiptap/extension-image": "^2.2.4",
+    "@tiptap/extension-link": "^2.2.4",
+    "@tiptap/extension-placeholder": "^2.2.4",
+    "@tiptap/pm": "^2.2.4",
+    "@tiptap/starter-kit": "^2.2.4",
+    "@tiptap/vue-3": "^2.2.4",
+    "@vueuse/components": "^10.9.0",
+    "@vueuse/core": "^10.9.0",
+    "algoliasearch": "^4.22.1",
+    "axios": "^1.6.8",
+    "browser-image-resizer": "^2.4.1",
+    "firebase": "^10.9.0",
+    "instantsearch.css": "^8.1.0",
+    "pinia": "^2.1.7",
+    "quasar": "^2.12.0",
+    "uuid": "^9.0.1",
+    "vue": "^3.3.4",
+    "vue-instantsearch": "^4.14.0",
+    "vue-router": "^4.2.2"
+  },
+  "devDependencies": {
+    "@quasar/app-vite": "^1.4.3",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-vue": "^9.14.1",
+    "postcss": "^8.4.14",
+    "prettier": "^2.8.8",
+    "unplugin-vue-router": "^0.8.4",
+    "vite-plugin-vue-layouts": "^0.8.0"
+  },
+  "engines": {
+    "node": "^18 || ^16 || ^14.19",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}
