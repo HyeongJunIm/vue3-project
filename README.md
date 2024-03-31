@@ -24,5 +24,5 @@
 <h2>사이트 구경 가기</h2>
 
 ###
-- 사이트 이동<href >
-https://ihj-vue3-firebase-app-5e087.web.app/
+- <a href="https://ihj-vue3-firebase-app-5e087.web.app/">사이트 이동</a> 
+
