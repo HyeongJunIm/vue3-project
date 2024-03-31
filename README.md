@@ -1,9 +1,6 @@
 <h1>Vue3-Project</h1>
 <h2>기간</h2>
-<div>
-    <summary>이이이이이이</summary>
-</div>
-
+ - 2024.03.01 ~ 2024.03.30
 
 
 
